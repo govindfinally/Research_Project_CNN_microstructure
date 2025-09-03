@@ -1,0 +1,81 @@
+Dataset Details — UHCS (Ultrahigh Carbon Steel) Microstructure
+Overview (DeCost, Francis & Holm — Acta Materialia, 2017)
+
+The dataset includes 961 SEM (scanning electron microscopy) micrographs of UHCS, spanning different heat treatments, magnifications, and contrast modes (SE and BSE).
+
+arXiv
++1
+
+Each image has a label indicating the primary microconstituent, such as:
+
+spheroidized cementite
+
+carbide network
+
+pearlite (and variants like pearlite + spheroidite, Widmanstätten cementite, martensite/bainite)
+
+arXiv
+دانشیاری | دانستنی‌های جذاب برای زندگی
+
+Metadata available for 598 images: includes annealing time, temperature, and quench medium.
+
+arXiv
+دانشیاری | دانستنی‌های جذاب برای زندگی
+
+Image Resolution & Preprocessing
+
+Original resolution: approx. 645 × 484 pixels.
+
+The authors also generated a larger dataset of cropped 224 × 224 sub-images, yielding 2400 images, to train CNN models.
+
+دانشیاری | دانستنی‌های جذاب برای زندگی
+
+Accessibility
+
+Data portal: The dataset is hosted on NIST materials data repository, accessible via a handle like materialsdata.nist.gov/.../11256/940.
+
+A companion GitHub repository contains a download script (download.sh) that retrieves:
+
+microstructures.sqlite (metadata)
+
+micrographs.zip (the micrograph images)
+
+GitHub
+
+Use Cases Demonstrated
+
+Classification tasks:
+
+Classifying the primary microconstituent (e.g., spheroidite vs network vs pearlite), achieving high accuracy (>95%) using standard CNN feature extraction.
+
+arXiv
+ScienceDirect
+
+Exploratory analysis:
+
+Using t-SNE to visualize how microstructures cluster in feature space, providing insight into processing-microstructure-property relationships.
+
+arXiv
+CHiMaD
+Brian DeCost
+
+Summary Table
+Feature	Details
+Number of images	961 SEM micrographs
+Image formats	SE and BSE modes
+Resolution	~645×484 px (raw), cropped variants also available
+Labeled classes	Spheroidized cementite, carbide network, pearlite variants, martensite/bainite
+Metadata	Annealing parameters (for ~598 images)
+Access method	NIST repository (via download.sh script) and GitHub repo available
+Applications	Supervised classification, visualization via t-SNE, baseline for CNN experiments
+Next Steps for You
+
+If you'd like, I can help you with:
+
+Downloading the dataset — provide you with the download.sh and instructions to pull all images and metadata.
+
+Dataset exploration — show example micrographs, class distribution, and how to crop into tiles.
+
+Building a baseline CNN classifier using the cropped images — complete with code (e.g., PyTorch) to get you running quickly.
+
+Visualization pipeline — use t-SNE to analyze clustering and embedding spaces.
