@@ -71,11 +71,3 @@ Applications	Supervised classification, visualization via t-SNE, baseline for CN
 Next Steps for You
 
 If you'd like, I can help you with:
-
-Downloading the dataset — provide you with the download.sh and instructions to pull all images and metadata.
-
-Dataset exploration — show example micrographs, class distribution, and how to crop into tiles.
-
-Building a baseline CNN classifier using the cropped images — complete with code (e.g., PyTorch) to get you running quickly.
-
-Visualization pipeline — use t-SNE to analyze clustering and embedding spaces.

@@ -1,0 +1,3 @@
+The first problem encountered was in github push : Reason was simple we had clone one  repo entirely so we had to cut it off its main repo and then staged it 
+The solution was [1] was{Remove-Item -Recurse -Force .\uhcs\.git; git add uhcs; git commit -m "Convert uhcs to normal folder and add its contents"; git push
+}
