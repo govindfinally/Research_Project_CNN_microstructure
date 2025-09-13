@@ -1,0 +1,13 @@
+
+python-dotenv ## this for .env
+pandas 
+numpy
+pymongo
+tensorflow
+pytorch
+pymongo
+
+certifi
+nltk
+scikit-learn
+-e.
